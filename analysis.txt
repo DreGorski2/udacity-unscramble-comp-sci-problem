@@ -1,0 +1,115 @@
+
+TASK 0
+
+print occurs only once and remains constant regardless of input size
+O(1)
+print occurs only once and remains constant regardless of input size
+O(1)
+
+
+TASK 1
+
+def unique_calls(calls)
+    Big O Notation
+    function takes in a list of data and interates through that data performing actions. As that input increases in size
+    so to does O(n), howevere given the nested if conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+
+def unique_texts(texts)
+    Big O Notation
+    function takes in a list of data and interates through that data performing actions. As that input increases in size
+    so to does O(n), howevere given the nested if conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+
+def messaging(totalt_calls, total_texts)
+    Big O Notation
+    print occurs only once and remains constant regardless if input size
+    O(1)
+
+
+
+TASK 2
+
+def find_calls_sept(calls)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a dict. As that input increases
+    in size so to does O(n), given the nested if conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def get_duration_caller(sept__dict)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a set. As that input increases
+    in size so to does O(n), given the nested if/else conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def get_duration_receiver(sept_dict, callers)
+    Big O Notation
+    function takes in a list and set of data and interates through that list updating the set. As that input increases
+    in size so to does O(n), given the nested if/else conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def display_caller(callers)
+    Big O Notation
+    function takes in a set of data and interates through that data to grab the max calling the max method creates
+    O(n log n).
+    O(n log n)
+
+
+TASK 3
+
+def bangalore_calls(calls)
+    Big O Notation
+    function takes in a list of data and interates through that data performing actions. As that input increases in size
+    so to does O(n) in a linear fashion.
+    O(n)
+
+def bangalore_both_ways(bangalore_calls)
+    function takes in a list of data and interates through that data performing actions. As that input increases in size
+    so to does O(n) in a linear fashion.
+    O(n)
+
+def find_area_codes(bangalore_callers)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a dict. As that input increases
+    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def display_codes(area_codes)
+    Big O Notation
+    we call sort on the numbers in get them lexigraphical order
+    O(n log n)
+
+
+def bangalore_metrics(bangalore_callers, bangalore_only)
+    Big O Notation
+    function takes in two lists of data and adds them then displays metrics.
+    O(1)
+
+TASK 4
+
+
+def parse_marketer_calls(calls)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a list. As that input increases
+    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def parse_marketers_text(texts)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a list. As that input increases
+    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def compare(call_marketers, text_marketers)
+    Big O Notation
+    function takes in a list of data and interates through that data creating a list. As that input increases
+    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
+    O(n^2)
+
+def display_numbers(call_marketers)
+    Big O Notation
+    we call sort on the numbers in get them lexigraphical order
+    O(n log n)
+

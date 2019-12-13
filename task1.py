@@ -23,27 +23,23 @@ def call_data(path):
 
 
 def unique_calls(calls):
-    total_calls = []
+    total_calls = set()
     for call in calls:
-        if call[0] not in total_calls:
-            total_calls.append(call[0])
-        elif call[1] not in total_calls:
-            total_calls.append(call[1])
+        total_calls.add(call[0])
+        total_calls.add(call[1])
     return total_calls
 
 
 def unique_texts(texts):
-    total_texts = []
+    total_texts = set()
     for text in texts:
-        if text[0] not in total_texts:
-            total_texts.append(text[0])
-        elif text[1] not in total_texts:
-            total_texts.append(text[1])
+        total_texts.add(text[0])
+        total_texts.add(text[1])
     return total_texts
 
 
 def messaging(total_calls, total_texts):
-    print(f'''There are {len(set(total_texts + total_calls))} different telephone numbers in the records.''')
+    print(f'''There are {len(total_texts) + len(total_calls)} different telephone numbers in the records.''')
 
 
 if __name__ == '__main__':

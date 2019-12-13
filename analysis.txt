@@ -11,21 +11,22 @@ TASK 1
 
 def unique_calls(calls)
     Big O Notation
-    function takes in a list of data and interates through that data performing actions. As that input increases in size
-    so to does O(n), howevere given the nested if conditions the worst case complexity becomes O(n^2).
-    O(n^2)
+    function takes in a list of data and interates through that data and creates a set. As that input increases in size
+    so to does O(n) in a linear fashion
+    O(n)
 
 
 def unique_texts(texts)
     Big O Notation
-    function takes in a list of data and interates through that data performing actions. As that input increases in size
-    so to does O(n), howevere given the nested if conditions the worst case complexity becomes O(n^2).
-    O(n^2)
+    function takes in a list of data and interates through that data and creates a set. As that input increases in size
+    so to does O(n) in a linear fashion
+    O(n)
+
 
 
 def messaging(totalt_calls, total_texts)
     Big O Notation
-    print occurs only once and remains constant regardless if input size
+    print occurs only once and remains constant regardless of input size
     O(1)
 
 
@@ -92,21 +93,24 @@ TASK 4
 
 def parse_marketer_calls(calls)
     Big O Notation
-    function takes in a list of data and interates through that data creating a list. As that input increases
-    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
-    O(n^2)
+    function takes in a list of data and interates through that data and creates a set. As that input increases in size
+    so to does O(n) in a linear fashion
+    O(n)
+
 
 def parse_marketers_text(texts)
     Big O Notation
-    function takes in a list of data and interates through that data creating a list. As that input increases
-    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
-    O(n^2)
+    function takes in a list of data and interates through that data and creates a set. As that input increases in size
+    so to does O(n) in a linear fashion
+    O(n)
 
-def compare(call_marketers, text_marketers)
+
+def compare(out_call, no_tele)
     Big O Notation
-    function takes in a list of data and interates through that data creating a list. As that input increases
-    in size so to does O(n), given the nested if in conditions the worst case complexity becomes O(n^2).
-    O(n^2)
+    function takes in two sets and creates a new set subtracting one set from another generating a list which remains
+    contant regardless of input size
+    O(1)
+
 
 def display_numbers(call_marketers)
     Big O Notation

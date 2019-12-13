@@ -23,36 +23,39 @@ def call_data(path):
 
 
 def parse_marketer_calls(calls):
-    call_marketers = list(set([call[0] for call in calls if call[0][0:3] == '140' and call[0] not in calls[1]]))
-    return call_marketers
+    out_call= set()
+    no_tele = set()
+    for call in calls:
+        out_call.add(call[0])
+        no_tele.add(call[1])
+    return out_call, no_tele
 
 
-def parse_marketers_text(texts):
-    text_marketers = list(set(text[0] for text in texts if text[0][0:3] == '140' and text[0] not in texts[1]))
-    return text_marketers
+def parse_marketer_text(texts, no_tele):
+    for text in texts:
+        no_tele.add(text[0])
+        no_tele.add(text[1])
+    return no_tele
 
 
-def compare(call_marketers, text_marketers):
-    final_list = []
-    for call in call_marketers:
-        if call not in text_marketers:
-            final_list.append(call)
-    return final_list
+def compare(out_call, no_tele):
+    tele = list(out_call - no_tele)
+    return tele
+        
 
-
-def display_numbers(final_list):
+def display_numbers(tele):
     print("These numbers could be telemarketers: \n")
-    final_list.sort()
-    print(*final_list, sep="\n")
+    tele.sort()
+    print(*tele, sep="\n")
 
 
 if __name__ == '__main__':
     texts = text_data(path)
     calls = call_data(path)
-    call_marketers = parse_marketer_calls(calls)
-    text_marketers = parse_marketers_text(texts)
-    final_list = compare(call_marketers, text_marketers)
-    display_numbers(final_list)
+    out_call, no_tele = parse_marketer_calls(calls)
+    no_tele = parse_marketer_text(texts, no_tele)
+    tele = compare(out_call, no_tele)
+    display_numbers(tele)
 
 
 """

@@ -39,7 +39,7 @@ def unique_texts(texts):
 
 
 def messaging(total_calls, total_texts):
-    print(f'''There are {len(total_texts) + len(total_calls)} different telephone numbers in the records.''')
+    print(f'''There are {len(total_texts.union(total_calls))} different telephone numbers in the records.''')
 
 
 if __name__ == '__main__':

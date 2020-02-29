@@ -1,10 +1,7 @@
+Task 0:
 
-TASK 0
-
-print occurs only once and remains constant regardless of input size
-O(1)
-print occurs only once and remains constant regardless of input size
-O(1)
+This algorithm is constant time because has a running time independent of the input size
+Overall Big O Notation: O(1) + O(1) = O(1) where worst case scenario becomes O(1)
 
 
 TASK 1
@@ -12,22 +9,22 @@ TASK 1
 def unique_calls(calls)
     Big O Notation
     function takes in a list of data and interates through that data and creates a set. As that input increases in size
-    so to does O(n) in a linear fashion
+    so to does O(c) in a linear fashion
     O(n)
-
 
 def unique_texts(texts)
     Big O Notation
     function takes in a list of data and interates through that data and creates a set. As that input increases in size
     so to does O(n) in a linear fashion
-    O(n)
+    O(t)
 
 
-
-def messaging(totalt_calls, total_texts)
+def messaging(total_calls, total_texts)
     Big O Notation
     print occurs only once and remains constant regardless of input size
     O(1)
+
+Overall Big O Notation: O(c) + O(t) + O(1) = O(ct) where worst case scenario becomes O(ct)
 
 
 
@@ -56,7 +53,8 @@ def display_caller(callers)
     function takes in a set of data and interates through that data to grab the max calling the max method creates
     O(n log n).
     O(n log n)
-
+    
+Overall Big O Notation: O(n^2) + O(n log n) = where the worst case represents O(n^2)
 
 TASK 3
 
@@ -87,6 +85,9 @@ def bangalore_metrics(bangalore_callers, bangalore_only)
     Big O Notation
     function takes in two lists of data and adds them then displays metrics.
     O(1)
+    
+Overall Big O Notation: O(2n + O(1)) + O(n^2) + O(n log n) = where the worst case is represented by O(n^2)
+   
 
 TASK 4
 
@@ -116,4 +117,7 @@ def display_numbers(call_marketers)
     Big O Notation
     we call sort on the numbers in get them lexigraphical order
     O(n log n)
+
+Overall Big O Notation: O(2n + O(1)) + O(n log n) = where the worst case is represented by O(n^2)
+    
 
